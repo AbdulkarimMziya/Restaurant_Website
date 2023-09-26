@@ -1,0 +1,385 @@
+
+/* importing font from googleapis */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+/* Styling for body section, where we define the font to be used */
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Light green background design */
+section
+{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #E56642;
+}
+
+/* Dark green background design */
+
+section .circle
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00210D;
+  clip-path: circle(85% at right -20%);
+}
+
+/* Design for the header of the website */
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Position and width of the website logo */
+header .logo
+{
+  position: relative;
+  max-width: 250px;
+  height: 80px; 
+}
+
+/* Position of the website navigation menu */
+
+header .navigation
+{
+  position: relative;
+  display: flex;
+}
+header .navigation li
+{
+  list-style: none;
+}
+
+/* Design of the website navigation menu */
+
+header .navigation li a
+{
+  display: inline-block;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+}
+/* Design of the website navigation menu while on hover and active */
+header .navigation li a:hover
+{
+  color: #FD8D6E;
+}
+header .navigation li a:active
+{
+  display: inline-block;
+  color: #E56642;
+
+}
+
+/* content position, color, justification, alignment and width */
+.content
+{
+  position: relative;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* content text-box position and width */
+.content .text-box
+{
+  width: 100%;
+  position: relative;
+  margin-right: 20px;
+}
+
+/* H2 design: size, font weight, margin and line height */
+.content .text-box h2
+{
+font-size: 2em;
+margin-bottom: 10px;
+line-height: 1.4em;
+font-weight: 700;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #00210D;
+}
+
+/* H1 design: size, font weight, margin and line height */
+
+.content .text-box h1
+{
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+  font-weight: 700;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #00210D;
+}
+
+/* paragraph design: size, font weight, margin and line height */
+
+p
+{
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.4em;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #00210D;
+}
+
+/* URL/link design: size, font weight, margin and line height */
+.content .text-box a
+{
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 8px 20px;
+  background: #00210D;
+  color: #E56642;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+/* input width, padding, margin and border radius */
+input[type=text], select
+{
+  width: 100%;
+  padding: 7px 20px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number], select
+{
+  width: 100%;
+  padding: 7px 20px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit]
+{
+  width: 100%;
+  background-color: #E56642;
+  color: 00210D;
+  padding: 7px 20px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover
+{
+  background-color: #FD8D6E;
+  color: 00210D;
+}
+
+/* form padding, background color, border radius and border color. */
+.form
+{
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px;
+  border-color: #00210D;
+}
+
+/*Hompage image Slider Design*/
+.content .img-box
+{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content .img-box img
+{
+  width: 350px;
+}
+.content .img-box .pic
+{
+  width: 500px;
+  padding: 6px;
+}
+.content .img-box .img-bg
+{
+  background-color: #E56642;
+  border-radius: 12px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-height: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  width: 100%;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #fff;
+  font-size: large;
+  padding: 8px 12px;
+  position: absolute;
+  font-size: 21px;
+  font-weight: 500;
+  width: 100%;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #00210D;
+}
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* style for responsive mobile view */
+@media (max-width: 991px)
+{
+  header
+  {
+    padding: 40px;
+  }
+  section
+  {
+    padding: 150px 40px;
+  }
+  .content
+  {
+    flex-direction: column;
+  }
+  .content .text-box
+  {
+    max-width: 100%;
+  }
+  .content .img-box
+  {
+    max-width: 100%;
+  }
+  .content .img-box .pic
+  {
+    width: 411px;
+    padding: 6px;
+    margin-top: 55px;
+  }
+  header .navigation
+  {
+    display: none;
+  }
+
+  header .navigation .active
+  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00210D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+
+  header .navigation li a
+  {
+    margin: 10px 0;
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+  .content .img-box img
+  {
+    width: 100%;
+  }
+  .slideshow-container
+  {
+    position: relative;
+    width: 100%;
+    max-height: 100%;
+  }
+  .toggle
+  {
+    position: relative;
+    background: url(img/menu.png);
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 10000;
+  }
+  .toggle.active
+  {
+    position: fixed;
+    right: 40px;
+    background: url(img/close.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+/* end of mobile view style */

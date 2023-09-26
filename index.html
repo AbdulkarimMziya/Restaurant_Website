@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chino's Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#"><img src="img/myLogo.png" class="logo"></a>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="promo.html">Promo</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="career.html">Careers</a></li>
+          <li><a href="driver.html">Drivers</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="reference.html">Reference Page</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="text-box">
+          <h2>EAT TO LIVE... LIVE TO EAT</h2>
+
+          <h1>JUST EAT!</h1>
+          <p>
+            Your satisfaction, Our delight.
+          </p>
+          <a href="about.html">Learn More</a>
+          <a href="order.html">Order Now</a>
+        </div>
+        <div class="img-box">
+
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <img src="img/egusi.png">
+              <div class="text">Egusi Soup</div>
+            </div>
+            <div class="mySlides fade">
+              <img src="img/fried.png">
+              <div class="text">Fried Rice</div>
+            </div>
+            <div class="mySlides fade">
+              <img src="img/lamb.png">
+              <div class="text">Roast Lamb</div>
+            </div>
+            <div class="mySlides fade">
+              <img src="img/jollof.png">
+              <div class="text">Jollof Rice</div>
+            </div>
+            <div class="mySlides fade">
+              <img src="img/ofada.png">
+              <div class="text">Ofada Rice</div>
+            </div>
+            <div class="mySlides fade">
+              <img src="img/plate.png">
+              <div class="text">Beef Roast</div>
+            </div>
+
+
+
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+    </section>
+    <script>
+    // slider script
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 5000); // Change image every 2 seconds
+    }
+    // toggle menu script
+    function toggleMenu() {
+      const menuToggle = document.querySelector('.toggle');
+      const navigation = document.querySelector('.navigation')
+      menuToggle.classList.toggle('active')
+      Navigation.classList.toggle('active')
+    }
+
+    </script>
+
+  </body>
+  <footer>
+   Last updated: <span id="last-updated"></span>
+  <script>
+   var lastUpdated = new Date(document.lastModified);
+   document.getElementById("last-updated").innerHTML = lastUpdated.toLocaleDateString();
+  </script>
+  </footer>
+    
+</html>

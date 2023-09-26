@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chino's Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1">
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#"><img src="img/myLogo.png" class="logo"></a>
+        <div class="toggle" onclick="toggleMenu()"></div>
+
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="promo.html">Promo</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="career.html">Careers</a></li>
+          <li><a href="driver.html">Drivers</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="text-box">
+          <h2>Work with Us</h2>
+          <div class="form">
+            <form>
+              <input type="text" placeholder="Full Name">
+              <input type="text" placeholder="Email address">
+              <input type="text" placeholder="Phone number">
+              <input type="text" placeholder="Street address">
+              <input type="number" placeholder="Years of Experience">
+
+              <select>
+                <option>Choose a Role</option>
+                <option>Chef</option>
+                <option>Customer Service Executive</option>
+                <option>Nutritionist</option>
+                <option>Tech Support</option>
+                <option>Delivery</option>
+
+
+              </select>
+
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+
+        </div>
+        <div class="img-box">
+          <div class="img-bg">
+            <img src="img/career.jpg" class="pic">
+          </div>
+        </div>
+
+        </div>
+    </section>
+    <script>
+    function toggleMenu() {
+      const menuToggle = document.querySelector('.toggle');
+      const navigation = document.querySelector('.navigation')
+      menuToggle.classList.toggle('active')
+      Navigation.classList.toggle('active')
+    }
+    </script>
+  </body>
+</html>
